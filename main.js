@@ -17,10 +17,10 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 //PREPARAZIONE
 
 //raccolta dati
-let userChoise = parseFloat(prompt ("Quanti km vuoi percorrere?"));
+const userChoise = parseFloat(prompt ("Quanti km vuoi percorrere?"));
 console.log(userChoise);
 
-let userAge = parseInt(prompt ("Quanti anni hai?"));
+const userAge = parseInt(prompt ("Quanti anni hai?"));
 console.log(userAge);
 
 const pricePerKm = 0.21;
