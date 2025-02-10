@@ -17,22 +17,23 @@ L'output del prezzo finale va messo fuori in forma umana (con massimo due decima
 //PREPARAZIONE
 
 //raccolta dati
-let userChoise = prompt ("Quanti km vuoi percorrere?");
+let userChoise = parseFloat(prompt ("Quanti km vuoi percorrere?"));
 console.log(userChoise);
 
-let userAge = prompt ("Quanti anni hai?");
+let userAge = parseInt(prompt ("Quanti anni hai?"));
 console.log(userAge);
 
 const pricePerKm = 0.21;
 
-let priceFull = userChoise * pricePerKm;
+let priceResult = userChoise * pricePerKm;
 
 
 //verifica
-if (userAge < 18); {
-    console.log("priceFull *= 0.80");
-} else (userAge > 65); {
-    console.log("priceFull *= 0.60");    
-} else {
-    console.log(priceFull);
+if (userAge < 18) {
+    priceResult *= 0.80;
+} else if (userAge > 65) {
+    priceResult *= 0.60;
 }
+
+//numero in decimali
+console.log(priceResult.toFixed(2));
