@@ -27,6 +27,7 @@ const pricePerKm = 0.21;
 
 let priceResult = userChoise * pricePerKm;
 
+//ESECUZIONE
 
 //verifica
 if (userAge < 18) {
@@ -35,5 +36,5 @@ if (userAge < 18) {
     priceResult *= 0.60;
 }
 
-//numero in decimali
+//numero in decimali da stampare in console
 console.log(priceResult.toFixed(2));
