@@ -22,3 +22,17 @@ console.log(userChoise);
 
 const userAge = prompt ("Quanti anni hai?");
 console.log(userAge);
+
+const pricePerKm = 0.21;
+
+const priceFull = km * pricePerKm;
+
+
+//verifica
+if (userAge < 18); {
+    console.log("priceFull *= 0.80");
+} else if (userAge > 65); {
+    console.log("priceFull *= 0.60");    
+} else {
+    console.log(priceFull);
+}
